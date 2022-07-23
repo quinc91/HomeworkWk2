@@ -1,0 +1,51 @@
+* {
+    font-family: monospace;
+    font-size: 23px;
+
+}
+
+:root {
+    --dark: rgb(100, 33, 95);
+    --hover: #00d0ff;
+}
+
+header {
+    background-color: var(--dark);
+    color: white;
+    padding: 0px 10px 3px 10px
+    
+    
+}
+nav ul {
+    font-weight: lighter;
+    display: flex;
+    justify-content:flex-end;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: -20px 10px 0px 10px; 
+    font-family:
+}
+
+nav ul li:hover {
+    color: var(--hover);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+header h1 {
+    font-family: 'Quickand';
+    font-size: 300%;
+    font-weight: lighter;
+    padding-left: 15px;
+    text-shadow: 7px 7px 5px black;
+}
+
+header h2 {
+    text-align: right;
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 150%;
+    margin-right: 5px;
+    font-weight: lighter;
+}
