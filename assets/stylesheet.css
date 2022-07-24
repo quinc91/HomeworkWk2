@@ -23,6 +23,7 @@ header {
 /*nav bar*/
 nav {
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--dark);
 } 
 nav a{
@@ -55,9 +56,15 @@ h2 {
 }
 
 /*main*/
+main {
+
+    
+}
+
 article {
     background-color: var(--medium);
     padding-bottom: 20px;
+    
 }
 
 article *h3 {
@@ -72,21 +79,35 @@ article *h3 {
 
 
 article *p {
+    padding: 10px, 10px;
+    
     
 }
 div {
-
+    position: relative;
+    width: 500px;
 }
-#cal {
-    background-image: url;
-
+.work {
+   
+     
 }
-
 img {
-    width: 100%;
+
+    width: 50%;
+    border: 10px solid var(--hover);
 }
+div p {
+    position: absolute;
+    padding: 15px;
+    top: 50px;
+    left: 10px;
+    background-color: var(--hover);
+    border: 5px solid black;
+}
+
 .contact {
     display: flex;
+    flex-wrap: wrap;
 }
 article a {
     font-size: 125%;
@@ -104,7 +125,7 @@ article a:hover {
 
 /*responsive*/
 @media screen and (max-width: 450px ) {
-    main article, nav a, article li {
+    main article, nav a, article a {
         width: 100%;
         
     }
