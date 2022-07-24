@@ -1,6 +1,7 @@
 * {
     font-family:sans-serif ;
     font-size: 16px;
+    box-sizing: border-box;
 
 }
 
@@ -8,31 +9,30 @@
     --dark: rgb(92, 27, 87);
     --hover: #00d0ff;
     --medium: rgba(92, 27, 87, 0.699);
+    --maintxt: aliceblue;
 }
 
+/*header*/
 header {
     background-color: var(--dark);
-    color: white;
-    padding: 0px 10px 3px 10px
+    color: var(--maintxt);
+    padding: 0px 10px 3px 10px;
     
     
 }
-
-nav ul {
-    font-weight: lighter;
+/*nav bar*/
+nav {
     display: flex;
-    flex: wrap;
-    justify-content: flex-end;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: -20px 10px 0px 10px; 
+    background-color: var(--dark);
+} 
+nav a{
+    text-align: center;
     font-size: 125%;
-
+    color: var(--maintxt);
+    text-decoration: none;
+    margin: 0px 10px;
 }
-
-nav ul li:hover {
+nav a:hover {
     color: var(--hover);
     font-weight: bolder;
     cursor: pointer;
@@ -46,50 +46,67 @@ header h1 {
     text-shadow: 7px 7px 5px black;
 }
 
-header h2 {
+h2 {
+    background-color: var(--dark);
     text-align: right;
     font-family: 'Edu SA Beginner', cursive;
     font-size: 150%;
-    margin-right: 5px;
     font-weight: lighter;
 }
 
-main {
-    
-
-}
-
+/*main*/
 article {
     background-color: var(--medium);
     padding-bottom: 20px;
 }
 
-article h3 {
+article *h3 {
     position: relative;
-    width: auto;
+    width: 30%;
     height: 15px;
-    padding: 15px;
     font-size: 115%;
+    float: left;
     
 }
 
-article p {
-    position: relative;
+
+
+article *p {
+    
+}
+div {
+
+}
+#cal {
+    background-image: url;
+
+}
+
+img {
+    width: 100%;
+}
+.contact {
     display: flex;
+}
+article a {
+    font-size: 125%;
+    text-decoration: none;
     width: auto;
-    padding: -20px 20px 30px 0px;
-    margin: -20px 20px 0px 20px;
+    margin: 0px 10px;
+    color: black;
+}
+article a:hover {
+    color: var(--hover);
+    font-weight: bolder;
+    cursor: pointer;
 }
 
-article ul li {
-    display: inline-block;
-    text-align: justify;
-    margin: 5px;
-}
 
+/*responsive*/
 @media screen and (max-width: 450px ) {
-    main, nav ul li {
-        flex-direction: column;
+    main article, nav a, article li {
+        width: 100%;
+        
     }
     
 }
