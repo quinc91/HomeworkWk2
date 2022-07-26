@@ -25,6 +25,9 @@ nav {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--dark);
+    position: fixed;
+    width: 100%;
+    
 } 
 nav a{
     text-align: center;
@@ -57,7 +60,7 @@ h2 {
 
 /*main*/
 main {
-
+    
     
 }
 
@@ -83,28 +86,8 @@ article *p {
     
     
 }
-div {
-    position: relative;
-    width: 500px;
-}
-.work {
-   
-     
-}
-img {
 
-    width: 50%;
-    border: 10px solid var(--hover);
-}
-div p {
-    position: absolute;
-    padding: 15px;
-    top: 50px;
-    left: 10px;
-    background-color: var(--hover);
-    border: 5px solid black;
-}
-
+/*Contact*/
 .contact {
     display: flex;
     flex-wrap: wrap;
@@ -122,12 +105,57 @@ article a:hover {
     cursor: pointer;
 }
 
+/*Work*/
+#work { 
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+article div{
+
+}
+.cal, .calen, .clock, .task {
+    background-color: var(--hover);
+    border: 5px solid var(--dark);  
+    width: 400px;
+    height: 400px;  
+
+}
+.cal {
+    background-image: url(./images/calculator.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.calen {
+    background-image: url(./images/calender.jpeg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.clock {
+    background-image: url(./images/clock.webp) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.task {
+    background-image: url(./images/task.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#work div p {
+    padding: 15px;
+    top: 50px;
+    left: 10px;
+    background-color: var(--hover);
+    border: 5px solid var(--dark);
+    width: 50%;
+}
+
+
 
 /*responsive*/
 @media screen and (max-width: 450px ) {
-    main article, nav a, article a {
+    .work, nav a, article a {
         width: 100%;
-        
-    }
+}
     
 }
